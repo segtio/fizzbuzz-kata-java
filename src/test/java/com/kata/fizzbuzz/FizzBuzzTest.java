@@ -1,11 +1,21 @@
 package com.kata.fizzbuzz;
 
 
+import com.kata.fizzbuzz.enumeration.Constant;
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class FizzBuzzTest {
+
+
+    private FizzBuzz fizzBuzz;
+
+    @Before
+    public void init() {
+        fizzBuzz = new FizzBuzz();
+    }
 
     /**
      * Should Print Normal Numbers
@@ -15,9 +25,9 @@ public class FizzBuzzTest {
     @Test
     public void shouldPrintNormalNumbers() {
 
-        assertThat(FizzBuzz.convert(1)).isEqualTo("1");
-        assertThat(FizzBuzz.convert(7)).isEqualTo("7");
-        assertThat(FizzBuzz.convert(13)).isNotEqualTo("13");
+        assertThat(fizzBuzz.convert(1)).isEqualTo("1");
+        assertThat(fizzBuzz.convert(7)).isEqualTo("7");
+        assertThat(fizzBuzz.convert(13)).isNotEqualTo("13");
 
     }
 
@@ -28,9 +38,9 @@ public class FizzBuzzTest {
      */
     @Test
     public void shouldPrintFizzForDivisibleByThreeNumbers() {
-        assertThat(FizzBuzz.convert(3)).isEqualTo(FizzBuzz.FIZZ);
-        assertThat(FizzBuzz.convert(12)).isEqualTo(FizzBuzz.FIZZ);
-        assertThat(FizzBuzz.convert(18)).isEqualTo(FizzBuzz.FIZZ);
+        assertThat(fizzBuzz.convert(3)).isEqualTo(Constant.FIZZ.getName());
+        assertThat(fizzBuzz.convert(12)).isEqualTo(Constant.FIZZ.getName());
+        assertThat(fizzBuzz.convert(18)).isEqualTo(Constant.FIZZ.getName());
     }
 
     /**
@@ -40,9 +50,9 @@ public class FizzBuzzTest {
      */
     @Test
     public void shouldPrintBuzzForDivisibleByFiveNumbers() {
-        assertThat(FizzBuzz.convert(5)).isEqualTo(FizzBuzz.BUZZ);
-        assertThat(FizzBuzz.convert(10)).isEqualTo(FizzBuzz.BUZZ);
-        assertThat(FizzBuzz.convert(25)).isEqualTo(FizzBuzz.BUZZ);
+        assertThat(fizzBuzz.convert(5)).isEqualTo(Constant.BUZZ.getName());
+        assertThat(fizzBuzz.convert(10)).isEqualTo(Constant.BUZZ.getName());
+        assertThat(fizzBuzz.convert(25)).isEqualTo(Constant.BUZZ.getName());
     }
 
     /**
@@ -52,9 +62,9 @@ public class FizzBuzzTest {
      */
     @Test
     public void shouldPrintFizzBuzzForDivisibleByThreeAndFiveNumbers() {
-        assertThat(FizzBuzz.convert(15)).isEqualTo(FizzBuzz.FIZZBUZZ);
-        assertThat(FizzBuzz.convert(30)).isEqualTo(FizzBuzz.FIZZBUZZ);
-        assertThat(FizzBuzz.convert(45)).isEqualTo(FizzBuzz.FIZZBUZZ);
+        assertThat(fizzBuzz.convert(15)).isEqualTo(Constant.FIZZBUZZ.getName());
+        assertThat(fizzBuzz.convert(30)).isEqualTo(Constant.FIZZBUZZ.getName());
+        assertThat(fizzBuzz.convert(45)).isEqualTo(Constant.FIZZBUZZ.getName());
     }
 
     /**
@@ -64,9 +74,9 @@ public class FizzBuzzTest {
      */
     @Test
     public void shouldPrintFizzForNumbersThatContainThree() {
-        assertThat(FizzBuzz.convert(23)).isEqualTo(FizzBuzz.FIZZ);
-        assertThat(FizzBuzz.convert(13)).isEqualTo(FizzBuzz.FIZZ);
-        assertThat(FizzBuzz.convert(31)).isEqualTo(FizzBuzz.FIZZ);
+        assertThat(fizzBuzz.convert(23)).isEqualTo(Constant.FIZZ.getName());
+        assertThat(fizzBuzz.convert(13)).isEqualTo(Constant.FIZZ.getName());
+        assertThat(fizzBuzz.convert(31)).isEqualTo(Constant.FIZZ.getName());
     }
 
     /**
@@ -76,8 +86,8 @@ public class FizzBuzzTest {
      */
     @Test
     public void shouldPrintBuzzForNumbersThatContainFive() {
-        assertThat(FizzBuzz.convert(52)).isEqualTo(FizzBuzz.BUZZ);
-        assertThat(FizzBuzz.convert(25)).isEqualTo(FizzBuzz.BUZZ);
-        assertThat(FizzBuzz.convert(65)).isEqualTo(FizzBuzz.BUZZ);
+        assertThat(fizzBuzz.convert(52)).isEqualTo(Constant.BUZZ.getName());
+        assertThat(fizzBuzz.convert(25)).isEqualTo(Constant.BUZZ.getName());
+        assertThat(fizzBuzz.convert(65)).isEqualTo(Constant.BUZZ.getName());
     }
 }
