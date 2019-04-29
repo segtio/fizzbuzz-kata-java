@@ -64,8 +64,10 @@ Create A Class with a static method converting numbers to the expected result
 ## Run
 
 ### Test
+    mvn clean test
 
 ### Launch
+    clean package exec:java
 
 
 [java-badge]: https://img.shields.io/badge/java-v1.8-red.svg
