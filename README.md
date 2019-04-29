@@ -1,10 +1,11 @@
 # FizzBuzz kata java
 FizzBuzz Kata
 
-![JAVA](https://img.shields.io/badge/java-v1.8-red.svg)
-![MAVEN](https://img.shields.io/badge/maven-v3.8.0-orange.svg)
+![JAVA] [java-badge]
+![MAVEN] [maven-badge]
 
-[![Coverage Status](https://coveralls.io/repos/github/segtio/fizzbuzz-kata-java/badge.svg?branch=master)](https://coveralls.io/github/segtio/fizzbuzz-kata-java?branch=master)
+[![Travis Build Status][build-badge]][build]
+[![Coverage Status][coverage-badge]] [coverage]
 
 ## Statement
 
@@ -61,3 +62,15 @@ Create A Class with a static method converting numbers to the expected result
 - [ ] Printing FizzBuzz for numbers has by 3 and five
 
 ## Run
+
+### Test
+
+### Launch
+
+
+[java-badge]: https://img.shields.io/badge/java-v1.8-red.svg
+[maven-badge]: https://img.shields.io/badge/maven-v3.8.0-orange.svg
+[build-badge]: https://travis-ci.com/segtio/fizzbuzz-kata-java.svg?branch=master
+[build]: https://travis-ci.org/segtio/fizzbuzz-kata-java
+[coverage-badge]: https://coveralls.io/repos/github/segtio/fizzbuzz-kata-java/badge.svg?branch=master
+[coverage]: https://coveralls.io/github/segtio/fizzbuzz-kata-java?branch=master
