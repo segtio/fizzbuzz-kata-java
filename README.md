@@ -72,7 +72,7 @@ Create A Class with a static method converting numbers to the expected result
 
 [java-badge]: https://img.shields.io/badge/java-v1.8-red.svg
 [maven-badge]: https://img.shields.io/badge/maven-v3.8.0-orange.svg
-[build-badge]: https://travis-ci.com/segtio/fizzbuzz-kata-java.svg?branch=master
+[build-badge]: https://travis-ci.org/segtio/fizzbuzz-kata-java.svg?branch=master
 [build]: https://travis-ci.org/segtio/fizzbuzz-kata-java
 [coverage-badge]: https://coveralls.io/repos/github/segtio/fizzbuzz-kata-java/badge.svg?branch=master
 [coverage]: https://coveralls.io/github/segtio/fizzbuzz-kata-java?branch=master
