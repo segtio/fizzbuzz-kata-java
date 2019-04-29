@@ -1,11 +1,11 @@
 # FizzBuzz kata java
 FizzBuzz Kata
 
-![JAVA] [java-badge]
-![MAVEN] [maven-badge]
+[![JAVA][java-badge]][java]
+[![MAVEN][maven-badge]][maven]
 
 [![Travis Build Status][build-badge]][build]
-[![Coverage Status][coverage-badge]] [coverage]
+[![Coverage Status][coverage-badge]][coverage]
 
 ## Statement
 
@@ -76,7 +76,9 @@ Create A Class with a static method converting numbers to the expected result
 
 
 [java-badge]: https://img.shields.io/badge/java-v1.8-red.svg
+[java]: https://www.java.com/fr/download/
 [maven-badge]: https://img.shields.io/badge/maven-v3.8.0-orange.svg
+[maven]: https://maven.apache.org
 [build-badge]: https://travis-ci.org/segtio/fizzbuzz-kata-java.svg?branch=master
 [build]: https://travis-ci.org/segtio/fizzbuzz-kata-java
 [coverage-badge]: https://coveralls.io/repos/github/segtio/fizzbuzz-kata-java/badge.svg?branch=master
