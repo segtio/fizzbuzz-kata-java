@@ -34,7 +34,7 @@ public class FizzBuzzTest {
     }
 
     /**
-     * Should Print Fizz For Divisible By Three Numbers
+     * Should Print Buzz For Divisible By Three Numbers
      * #inputs : 5|10|25
      * #output : "Buzz"|"Buzz"|"Buzz"
      */
@@ -46,14 +46,14 @@ public class FizzBuzzTest {
     }
 
     /**
-     * Should Print Fizz For Divisible By Three Numbers
+     * Should Print FizzBuzz For Divisible By Three Numbers
      * #inputs : 15|30|45
      * #output : "FizzBuzz"|"FizzBuzz"|"FizzBuzz"
      */
     @Test
     public void shouldPrintFizzBuzzForDivisibleByThreeAndFiveNumbers() {
-        assertThat(FizzBuzz.convert(15)).isEqualTo("FizzBuzz");
-        assertThat(FizzBuzz.convert(30)).isEqualTo("FizzBuzz");
-        assertThat(FizzBuzz.convert(45)).isEqualTo("FizzBuzz");
+        assertThat(FizzBuzz.convert(15)).isEqualTo(FizzBuzz.FIZZBUZZ);
+        assertThat(FizzBuzz.convert(30)).isEqualTo(FizzBuzz.FIZZBUZZ);
+        assertThat(FizzBuzz.convert(45)).isEqualTo(FizzBuzz.FIZZBUZZ);
     }
 }
