@@ -17,13 +17,8 @@ public class FizzBuzzTest {
         fizzBuzz = new FizzBuzz();
     }
 
-    /**
-     * Should Print Normal Numbers
-     * #inputs : 1|7|13
-     * #output : "1"|"7"|"Fizz"
-     */
     @Test
-    public void shouldPrintNormalNumbers() {
+    public void should_Print_Normal_Numbers() {
 
         assertThat(fizzBuzz.convert(1)).isEqualTo("1");
         assertThat(fizzBuzz.convert(7)).isEqualTo("7");
@@ -31,61 +26,40 @@ public class FizzBuzzTest {
 
     }
 
-    /**
-     * Should Print Fizz For Divisible By Three Numbers
-     * #inputs : 3|12|18
-     * #output : "Fizz"|"Fizz"|"Fizz"
-     */
     @Test
-    public void shouldPrintFizzForDivisibleByThreeNumbers() {
+    public void should_print_Fizz_when_Number_divisible_by_three() {
         assertThat(fizzBuzz.convert(3)).isEqualTo(Constant.FIZZ.getName());
         assertThat(fizzBuzz.convert(12)).isEqualTo(Constant.FIZZ.getName());
         assertThat(fizzBuzz.convert(18)).isEqualTo(Constant.FIZZ.getName());
     }
 
-    /**
-     * Should Print Buzz For Divisible By Three Numbers
-     * #inputs : 5|10|25
-     * #output : "Buzz"|"Buzz"|"Buzz"
-     */
+
     @Test
-    public void shouldPrintBuzzForDivisibleByFiveNumbers() {
+    public void should_print_Buzz_when_Number_divisible_by_five() {
         assertThat(fizzBuzz.convert(5)).isEqualTo(Constant.BUZZ.getName());
         assertThat(fizzBuzz.convert(10)).isEqualTo(Constant.BUZZ.getName());
         assertThat(fizzBuzz.convert(25)).isEqualTo(Constant.BUZZ.getName());
     }
 
-    /**
-     * Should Print FizzBuzz For Divisible By Three Numbers And Five
-     * #inputs : 15|30|45
-     * #output : "FizzBuzz"|"FizzBuzz"|"FizzBuzz"
-     */
+
     @Test
-    public void shouldPrintFizzBuzzForDivisibleByThreeAndFiveNumbers() {
+    public void should_print_FizzBuzz_when_Number_divisible_by_three_and_five() {
         assertThat(fizzBuzz.convert(15)).isEqualTo(Constant.FIZZBUZZ.getName());
         assertThat(fizzBuzz.convert(30)).isEqualTo(Constant.FIZZBUZZ.getName());
         assertThat(fizzBuzz.convert(45)).isEqualTo(Constant.FIZZBUZZ.getName());
     }
 
-    /**
-     * Should Print Fizz For Numbers That Contain Three
-     * #inputs : 23|13|31
-     * #output : "Fizz"|"Fizz"|"Fizz"
-     */
+
     @Test
-    public void shouldPrintFizzForNumbersThatContainThree() {
+    public void should_print_Fizz_when_Number_contains_three() {
         assertThat(fizzBuzz.convert(23)).isEqualTo(Constant.FIZZ.getName());
         assertThat(fizzBuzz.convert(13)).isEqualTo(Constant.FIZZ.getName());
         assertThat(fizzBuzz.convert(31)).isEqualTo(Constant.FIZZ.getName());
     }
 
-    /**
-     * Should Print Buzz For Numbers That Contain Three
-     * #inputs : 51|25|65
-     * #output : "Buzz"|"Buzz"|"Buzz"
-     */
+
     @Test
-    public void shouldPrintBuzzForNumbersThatContainFive() {
+    public void should_print_Buzz_when_Number_contains_five() {
         assertThat(fizzBuzz.convert(52)).isEqualTo(Constant.BUZZ.getName());
         assertThat(fizzBuzz.convert(25)).isEqualTo(Constant.BUZZ.getName());
         assertThat(fizzBuzz.convert(65)).isEqualTo(Constant.BUZZ.getName());
