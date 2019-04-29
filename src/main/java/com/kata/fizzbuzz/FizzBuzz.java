@@ -4,7 +4,8 @@ public class FizzBuzz {
     /**
      * FIZZ value
      */
-    public static final String FIZZ = "Fizz";
+    static final String FIZZ = "Fizz";
+    static final String BUZZ = "Buzz";
 
     /**
      * FizzBuzz converter
@@ -14,6 +15,8 @@ public class FizzBuzz {
     public static String convert(int number) {
         if (number % 3 == 0)
             return FIZZ;
+        if (number % 5 == 0)
+            return BUZZ;
         return String.valueOf(number);
     }
 }

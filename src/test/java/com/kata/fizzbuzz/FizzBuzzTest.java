@@ -40,8 +40,8 @@ public class FizzBuzzTest {
      */
     @Test
     public void shouldPrintFizzForDivisibleByFiveNumbers() {
-        assertThat(FizzBuzz.convert(5)).isEqualTo("Buzz");
-        assertThat(FizzBuzz.convert(10)).isEqualTo("Buzz");
-        assertThat(FizzBuzz.convert(25)).isEqualTo("Buzz");
+        assertThat(FizzBuzz.convert(5)).isEqualTo(FizzBuzz.BUZZ);
+        assertThat(FizzBuzz.convert(10)).isEqualTo(FizzBuzz.BUZZ);
+        assertThat(FizzBuzz.convert(25)).isEqualTo(FizzBuzz.BUZZ);
     }
 }

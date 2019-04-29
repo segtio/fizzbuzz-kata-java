@@ -51,11 +51,16 @@ Sample output:
 
 Create A Class with a static method converting numbers to the expected result
 
+#### Prerequisites
+
+- JAVA 1.8
+- Maven 3.x.x
+
 #### Features
 
 - [x] Printing Numbers from 1 to 100
 - [x] Printing Fizz for numbers divisible by 3
-- [ ] Printing Buzz for numbers divisible by 5
+- [x] Printing Buzz for numbers divisible by 5
 - [ ] Printing FizzBuzz for numbers divisible by 3 and five
 - [ ] Printing Fizz for numbers has 3
 - [ ] Printing Buzz for numbers has 5
