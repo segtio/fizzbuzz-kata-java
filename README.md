@@ -62,9 +62,9 @@ Create A Class with a static method converting numbers to the expected result
 - [x] Printing Fizz for numbers divisible by 3
 - [x] Printing Buzz for numbers divisible by 5
 - [x] Printing FizzBuzz for numbers divisible by 3 and five
-- [ ] Printing Fizz for numbers has 3
-- [ ] Printing Buzz for numbers has 5
-- [ ] Printing FizzBuzz for numbers has by 3 and five
+- [x] Printing Fizz for numbers has 3
+- [x] Printing Buzz for numbers has 5
+- [x] Printing FizzBuzz for numbers has by 3 and five
 
 ## Run
 
