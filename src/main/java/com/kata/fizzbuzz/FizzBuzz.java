@@ -16,11 +16,10 @@ public class FizzBuzz {
     public static String convert(int number) {
         String result = "";
 
-        if (number % 3 == 0)
+        if (number % 3 == 0 || String.valueOf(number).contains("3"))
             result = FIZZ;
         if (number % 5 == 0)
             result += BUZZ;
         return !result.isEmpty() ? result : String.valueOf(number);
     }
 }
-// Stage 2
