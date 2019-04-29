@@ -68,4 +68,16 @@ public class FizzBuzzTest {
         assertThat(FizzBuzz.convert(13)).isEqualTo(FizzBuzz.FIZZ);
         assertThat(FizzBuzz.convert(31)).isEqualTo(FizzBuzz.FIZZ);
     }
+
+    /**
+     * Should Print Buzz For Numbers That Contain Three
+     * #inputs : 51|25|65
+     * #output : "Buzz"|"Buzz"|"Buzz"
+     */
+    @Test
+    public void shouldPrintBuzzForNumbersThatContainFive() {
+        assertThat(FizzBuzz.convert(52)).isEqualTo(FizzBuzz.BUZZ);
+        assertThat(FizzBuzz.convert(25)).isEqualTo(FizzBuzz.BUZZ);
+        assertThat(FizzBuzz.convert(65)).isEqualTo(FizzBuzz.BUZZ);
+    }
 }
