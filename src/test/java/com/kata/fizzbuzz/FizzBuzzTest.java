@@ -28,8 +28,8 @@ public class FizzBuzzTest {
      */
     @Test
     public void shouldPrintFizzForDivisibleByThreeNumbers() {
-        assertThat(FizzBuzz.convert(3)).isEqualTo("Fizz");
-        assertThat(FizzBuzz.convert(15)).isEqualTo("Fizz");
-        assertThat(FizzBuzz.convert(18)).isEqualTo("Fizz");
+        assertThat(FizzBuzz.convert(3)).isEqualTo(FizzBuzz.FIZZ);
+        assertThat(FizzBuzz.convert(15)).isEqualTo(FizzBuzz.FIZZ);
+        assertThat(FizzBuzz.convert(18)).isEqualTo(FizzBuzz.FIZZ);
     }
 }

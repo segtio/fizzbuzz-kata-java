@@ -53,8 +53,8 @@ Create A Class with a static method converting numbers to the expected result
 
 #### Features
 
-- [ ] Printing Numbers from 1 to 100
-- [ ] Printing Fizz for numbers divisible by 3
+- [x] Printing Numbers from 1 to 100
+- [x] Printing Fizz for numbers divisible by 3
 - [ ] Printing Buzz for numbers divisible by 5
 - [ ] Printing FizzBuzz for numbers divisible by 3 and five
 - [ ] Printing Fizz for numbers has 3
