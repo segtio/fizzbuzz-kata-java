@@ -18,7 +18,7 @@ public class FizzBuzz {
 
         if (number % 3 == 0 || String.valueOf(number).contains("3"))
             result = FIZZ;
-        if (number % 5 == 0)
+        if (number % 5 == 0 || String.valueOf(number).contains("5"))
             result += BUZZ;
         return !result.isEmpty() ? result : String.valueOf(number);
     }
