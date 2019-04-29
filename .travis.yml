@@ -8,6 +8,7 @@ cache:
     - $HOME/.m2
 install: eval mvn clean
 script: eval mvn install
+after_success: eval mvn coveralls:report
 notifications:
   webhooks:
     on_success: change  # options: [always|never|change] default: always
