@@ -64,8 +64,8 @@ public class FizzBuzzTest {
      */
     @Test
     public void shouldPrintFizzForNumbersThatContainThree() {
-        assertThat(FizzBuzz.convert(23)).isEqualTo(FizzBuzz.FIZZBUZZ);
-        assertThat(FizzBuzz.convert(13)).isEqualTo(FizzBuzz.FIZZBUZZ);
-        assertThat(FizzBuzz.convert(31)).isEqualTo(FizzBuzz.FIZZBUZZ);
+        assertThat(FizzBuzz.convert(23)).isEqualTo(FizzBuzz.FIZZ);
+        assertThat(FizzBuzz.convert(13)).isEqualTo(FizzBuzz.FIZZ);
+        assertThat(FizzBuzz.convert(31)).isEqualTo(FizzBuzz.FIZZ);
     }
 }
