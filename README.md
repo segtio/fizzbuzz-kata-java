@@ -55,6 +55,7 @@ Create A Class with a static method converting numbers to the expected result
 
 - JAVA 1.8
 - Maven 3.x.x
+- Docker (optional)
 
 #### Features
 
@@ -65,6 +66,7 @@ Create A Class with a static method converting numbers to the expected result
 - [x] Printing Fizz for numbers has 3
 - [x] Printing Buzz for numbers has 5
 - [x] Printing FizzBuzz for numbers has by 3 and five
+- [x] Launch With Docker
 
 ## Run
 
@@ -74,6 +76,10 @@ Create A Class with a static method converting numbers to the expected result
 ### Launch
     clean package exec:java
 
+### Docker
+
+Build : `docker build -t fizzbuzz .` \
+Run :  `docker run --rm -it fizzbuzz:latest`
 
 [java-badge]: https://img.shields.io/badge/java-v1.8-red.svg
 [java]: https://www.java.com/fr/download/
