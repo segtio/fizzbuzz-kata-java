@@ -1,8 +1,8 @@
 package com.kata.fizzbuzz.enumeration;
 
 public enum Constant {
-    FIZZ ("Fizz", 3),
-    BUZZ ("Buzz", 5);
+    FIZZ("Fizz", 3),
+    BUZZ("Buzz", 5);
 
     private String name;
     private int value;
