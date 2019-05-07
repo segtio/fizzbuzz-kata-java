@@ -2,13 +2,16 @@ package com.kata.fizzbuzz;
 
 
 import com.kata.fizzbuzz.enumeration.Constant;
+import junitparams.JUnitParamsRunner;
+import junitparams.Parameters;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+@RunWith(JUnitParamsRunner.class)
 public class FizzBuzzTest {
-
 
     private FizzBuzz fizzBuzz;
 
@@ -18,50 +21,39 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void should_Print_Normal_Numbers() {
-
-        assertThat(fizzBuzz.convert(1)).isEqualTo("1");
-        assertThat(fizzBuzz.convert(7)).isEqualTo("7");
-        assertThat(fizzBuzz.convert(13)).isNotEqualTo("13");
-
+    @Parameters({"1", "44", "79"})
+    public void should_print_no_Fizz_nor_Buzz_numbers(int number) {
+        assertThat(fizzBuzz.convert(number)).isEqualTo(String.valueOf(number));
     }
 
     @Test
-    public void should_print_Fizz_when_Number_divisible_by_three() {
-        assertThat(fizzBuzz.convert(3)).isEqualTo(Constant.FIZZ.getName());
-        assertThat(fizzBuzz.convert(12)).isEqualTo(Constant.FIZZ.getName());
-        assertThat(fizzBuzz.convert(18)).isEqualTo(Constant.FIZZ.getName());
+    @Parameters({"3", "12", "18"})
+    public void should_print_Fizz_when_number_divisible_by_three(int number) {
+        assertThat(fizzBuzz.convert(number)).isEqualTo(Constant.FIZZ.getName());
     }
 
-
     @Test
-    public void should_print_Buzz_when_Number_divisible_by_five() {
-        assertThat(fizzBuzz.convert(5)).isEqualTo(Constant.BUZZ.getName());
-        assertThat(fizzBuzz.convert(10)).isEqualTo(Constant.BUZZ.getName());
-        assertThat(fizzBuzz.convert(25)).isEqualTo(Constant.BUZZ.getName());
+    @Parameters({"5", "10", "25"})
+    public void should_print_Buzz_when_number_divisible_by_five(int number) {
+        assertThat(fizzBuzz.convert(number)).isEqualTo(Constant.BUZZ.getName());
     }
 
-
     @Test
-    public void should_print_FizzBuzz_when_Number_divisible_by_three_and_five() {
-        assertThat(fizzBuzz.convert(15)).isEqualTo(Constant.FIZZBUZZ.getName());
-        assertThat(fizzBuzz.convert(30)).isEqualTo(Constant.FIZZBUZZ.getName());
-        assertThat(fizzBuzz.convert(45)).isEqualTo(Constant.FIZZBUZZ.getName());
+    @Parameters({"15", "30", "45"})
+    public void should_print_FizzBuzz_when_number_divisible_by_three_and_five(int number) {
+        String FIZZBUZZ = Constant.FIZZ.getName() + Constant.BUZZ.getName();
+        assertThat(fizzBuzz.convert(number)).isEqualTo(FIZZBUZZ);
     }
 
-
     @Test
-    public void should_print_Fizz_when_Number_contains_three() {
-        assertThat(fizzBuzz.convert(23)).isEqualTo(Constant.FIZZ.getName());
-        assertThat(fizzBuzz.convert(13)).isEqualTo(Constant.FIZZ.getName());
-        assertThat(fizzBuzz.convert(31)).isEqualTo(Constant.FIZZ.getName());
+    @Parameters({"23", "13", "31"})
+    public void should_print_Fizz_when_Number_contains_three(int number) {
+        assertThat(fizzBuzz.convert(number)).isEqualTo(Constant.FIZZ.getName());
     }
 
-
     @Test
-    public void should_print_Buzz_when_Number_contains_five() {
-        assertThat(fizzBuzz.convert(52)).isEqualTo(Constant.BUZZ.getName());
-        assertThat(fizzBuzz.convert(25)).isEqualTo(Constant.BUZZ.getName());
-        assertThat(fizzBuzz.convert(65)).isEqualTo(Constant.BUZZ.getName());
+    @Parameters({"52", "25", "65"})
+    public void should_print_Buzz_when_number_contains_five(int number) {
+        assertThat(fizzBuzz.convert(number)).isEqualTo(Constant.BUZZ.getName());
     }
 }
