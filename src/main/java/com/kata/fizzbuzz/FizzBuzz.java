@@ -4,27 +4,16 @@ import com.kata.fizzbuzz.enumeration.Constant;
 
 public class FizzBuzz {
 
-    /**
-     * FizzBuzz converter
-     * @param number
-     * @return String
-     */
     public String convert(int number) {
-        String result = "";
-
-        if (number % Constant.FIZZ.getValue() == 0 || hasDigit(number, Constant.FIZZ.getValue()))
-            result = Constant.FIZZ.getName();
-        if (number % Constant.BUZZ.getValue() == 0 || hasDigit(number, Constant.BUZZ.getValue()))
-            result += Constant.BUZZ.getName();
-        return !result.isEmpty() ? result : String.valueOf(number);
+        StringBuilder result = new StringBuilder();
+        for (Constant constant : Constant.values()) {
+            if (number % constant.getValue() == 0 || hasDigit(number, constant.getValue())) {
+                result.append(constant.getName());
+            }
+        }
+        return (result.length() > 0) ? result.toString() : String.valueOf(number);
     }
 
-    /**
-     * Returns true if number has the given digit, false it not
-     * @param number
-     * @param digit
-     * @return boolean
-     */
     private boolean hasDigit(int number, int digit) {
         return String.valueOf(number).contains(String.valueOf(digit));
     }
